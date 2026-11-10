@@ -371,6 +371,11 @@ img {
     align-items: center;
 }
 
+.avatar-stage {
+    position: relative;
+    display: inline-block;
+}
+
 .avatar-ring {
     position: relative;
     padding: 10px;
@@ -676,6 +681,17 @@ img {
 }
 
 .skills-col h3 i { color: var(--cyan); }
+
+.skills-sub {
+    display: block;
+    margin: 18px 0 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--cyan);
+}
 
 .skill-card {
     margin-bottom: 20px;
@@ -1075,7 +1091,11 @@ img {
         padding-top: 100px;
     }
 
-    .chip { display: none; }
+    .chip {
+        padding: 6px 10px;
+        font-size: 11px;
+        gap: 6px;
+    }
 
     .footer-wrap {
         flex-direction: column;
