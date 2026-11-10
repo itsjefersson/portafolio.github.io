@@ -3,443 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Portafolio web">
-    <meta name="author" content="itsJefersson">
+    <meta name="description" content="Portafolio de Jefersson — Ingeniero de Sistemas, Desarrollador de Software y especialista en IA aplicada a la analítica de datos.">
+    <meta name="author" content="Jefersson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>JF | INICIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jefersson — Ingeniero de Sistemas · IA & Analítica de Datos</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">JF</a>
-            </div>
+    <div class="scroll-progress"></div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+        <div class="container nav-wrap">
+            <a href="#inicio" class="logo">JF<span>.</span></a>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
-                    <li><a href="#productos" onclick="seleccionar()">PRODUCTOS</a></li>
-                    <!--li><a href="#portafolio" onclick="seleccionar()">PORTFOLIO</a></li-->
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#sobremi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#curriculum" class="nav-link">Trayectoria</a></li>
+                    <li><a href="#portafolio" class="nav-link">Proyectos</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
-
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/jefersson.jpg" alt="">
-            </div>
-            <h1>Jefersson</h1>
-            <h2>Ing. de sistemas.</h2>
-            <div class="redes">
-                <a href="https://github.com/jeferdev"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/jeferdev/"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.facebook.com/IngJefersson"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/jeferdev"><i class="fa-brands fa-twitter"></i></a>
-                <!--a href="#"><i class="fa-brands fa-skype"></i></a-->
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p><span>Hola, mi nombre es Jefersson.</span> Soy ingeniero de sistemas 💻 con una gran pasión por el desarrollo de sistemas y páginas web 🌐. Mi objetivo es mantenerme actualizado y en constante aprendizaje 🤓, me encanta la innovación 💡 y la búsqueda de soluciones creativas 💡.</p>
-
-            <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Teléfono</strong>
-                            +57 (300) 707 6311
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            engineerjef@gmail.com
-                        </li>
-                        <!--li>
-                            <strong>Website</strong>
-                            www.IngJefersson.com
-                        </li-->
-                        <li>
-                            <strong>Dirección</strong>
-                             Medellín - Colombia
-                        </li>
-                        <li>
-                            <strong>Cargo</strong>
-                            <span>FREELANCE</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- intereses -->
-                <div class="col">
-                    <h3>Intereses</h3>
-                    <div class="contenedor-intereses">
-                        <div class="interes">
-                            <i class="fa-solid fa-gamepad"></i>
-                            <span>TECH</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-brands fa-apple"></i>
-                            <span>INNOVACIÓN</span>
-                        </div>
-                        <!--div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOGRAFIA</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
-                        </div-->
-                        <!--div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>MOTOS</span>
-                        </div-->
-                        
-                    </div>
-                </div>
-            </div>
-            <a href="https://www.flipsnack.com/soytuabogadohoy/jefersson.html">
-                <button>VER CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
             </button>
-            </a>
         </div>
-    </section>
+    </header>
 
-    <!-- SECCION SKILLS -->
-    <section class="skills" id="skills">
-        <div class="contenido-seccion">
-            <h2>Skills</h2>
-            <div class="fila">
-                <!-- Technical Skill -->
-                <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>PHP</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Vue</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>90%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-grid-bg"></div>
+
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="pill"><span class="dot"></span> Disponible para nuevos proyectos</span>
+                <h1>Hola, soy <span class="gradient-text">Jefersson</span></h1>
+                <h2 class="hero-role"><span id="typed"></span><span class="cursor">|</span></h2>
+                <p class="hero-desc">
+                    Ing. de sistemas, apasionado por la innovación e investigación. Mi objetivo es estar a la
+                    vanguardia de las tecnologías y en la búsqueda de soluciones creativas. Analista y
+                    desarrollador de software. <strong>Los datos son la materia prima más importante de cualquier
+                    empresa, ¿tu empresa sí los aprovecha?</strong>
+                </p>
+                <div class="hero-actions">
+                    <a href="#portafolio" class="btn btn-primary">Ver proyectos <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contacto" class="btn btn-ghost">Contactar</a>
                 </div>
-                <!-- Professional Skills -->
-                <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <span>liderazgo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-social">
+                    <a href="https://github.com/itsjefersson/JeferDev" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jeferdev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Ingenieria de sistemas</h4>
-                        <span class="casa">Corporacion universitaria del caribe CECAR.</span>
-                        <span class="fecha">2012 - 2018</span>
-                        <p>He realizado mis estudios profesionales de ingeniería en sistemas en la institución CECAR. Algunos proyectos destacables durante mi formación incluyen el desarrollo de un sistema de gestión de información para el consultorio jurídico de CECAR y mi tesis sobre el desarrollo de un sistema geográfico que resalta la arquitectura contemporánea en el municipio de Coveñas.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Curso de PHP + MySQL + MVC</h4>
-                        <span class="casa">UDEMY</span>
-                        <span class="fecha">2019 - 2020</span>
-                        <p>Realicé este curso con la intención de aumentar mis conocimientos y habilidades en PHP y MVC. Uno de los resultados de este curso fue el desarrollo de un sistema de punto de venta utilizando PHP, MySQL y la plantilla adminLTDE. Actualmente, trabajo en la actualización del código a PHP 8.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Tecnico en programaciòn de software.</h4>
-                        <span class="casa">SENA</span>
-                        <span class="fecha">2010 - 2012</span>
-                        <p>En mis últimos años de secundaria, mi interés por la tecnología y la programación creció exponencialmente. Por ello, opté por tomar un curso técnico ofrecido por el SENA en mi institución educativa, en el que se enseñaba el ensamble y mantenimiento de computadoras. Como una sorpresa agradable, también recibimos instrucción en los conceptos básicos de programación.</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+            <div class="hero-visual">
+                <div class="avatar-ring">
+                    <div class="avatar">
+                        <img src="img/jefersson.jpg" alt="Jefersson">
                     </div>
                 </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Fullstack developer</h4>
-                        <span class="casa">Suplos.</span>
-                        <span class="fecha">2023 - Actualmente</span>
-                        <p>Desarrollo web haciendo uso tecnologias como PHP, Laravel, MySQL, VUE.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>FREELANCE</h4>
-                        <span class="casa">Desarrollador de software</span>
-                        <span class="fecha">2019 - 2023</span>
-                        <p>En mi experiencia profesional, he tenido la oportunidad de desarrollar páginas web y sistemas de información para distintas empresas, entre ellas Fundación Frutos de Corazón en Sincelejo, Tienda La Esperanza en Rionegro y Laws Jurídicas y Cobranzas en Cajicá.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Lider de innovación</h4>
-                        <span class="casa">HUB INNOVATION CARIBE S.A.S.</span>
-                        <span class="fecha">2022</span>
-                        <p>He desempeñado el papel de líder de innovación en la creación de prototipos de productos y servicios tecnológicos.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Docente</h4>
-                        <span class="casa">Centro de estudios del golfo.</span>
-                        <span class="fecha">2022</span>
-                        <p>He desempeñado el papel de líder de innovación en la creación de prototipos de productos y servicios tecnológicos.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Ingeniero de sistemas.</h4>
-                        <span class="casa">Instituto del riñon de Sucre IRIS.</span>
-                        <span class="fecha">2022 - 2023</span>
-                        <p>Soporte en TIC, Redes, Documentacion y sistematizacion de procesos.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Webmaster, Desarrollador web</h4>
-                        <span class="casa">Soy tu abogado HOY.</span>
-                        <span class="fecha">2021 - 2022</span>
-                        <p>Administrador de hosting y base de datos, desarrollador web.</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="chip chip-1"><i class="fa-brands fa-php"></i> PHP</div>
+                <div class="chip chip-2"><i class="fa-brands fa-vuejs"></i> Vue</div>
+                <div class="chip chip-3"><i class="fa-solid fa-robot"></i> IA</div>
+                <div class="chip chip-4"><i class="fa-solid fa-chart-line"></i> Datos</div>
             </div>
         </div>
+
+        <a href="#sobremi" class="scroll-down" aria-label="Bajar"><span></span></a>
     </section>
 
-    <!-- SECCION PORTFOLIO -->
-
-<!--
-    <section id="portfolio" class="portfolio">
-        <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
-            <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
+    <!-- SOBRE MI -->
+    <section id="sobremi" class="section about">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Sobre mí</span>
+                <h2>Perfil profesional</h2>
             </div>
-        </div>
-    </section>
 
--->
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        Ingeniero de sistemas apasionado por construir <strong>soluciones digitales</strong> y
+                        aprovechar el poder de los <strong>datos</strong>. Combino el desarrollo de software con
+                        técnicas de inteligencia artificial y analítica para crear productos útiles, escalables
+                        y orientados a resultados.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Años de experiencia</span></div>
+                        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Proyectos entregados</span></div>
+                        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Áreas de especialidad</span></div>
+                    </div>
+                    <a href="https://web.magneto365.com/pl/jefersson-bedoya-4420036" target="_blank" rel="noopener" class="btn btn-primary">Ver CV<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
 
-    <!-- SECCION CONTACTO -->
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <!-- Formulario -->
-            
-                <!--div class="col">
-                    <span>En construccion.</span>
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div-->
-                
-                <!-- Mapa -->
-                
-                <!--div class="col">
-                    
-                    <img src="img/cacion.png" alt="">
-
-                    <div class="info">
+                <div class="about-cards">
+                    <div class="info-card reveal">
+                        <h3><i class="fa-solid fa-user"></i> Datos personales</h3>
                         <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Sincelejo, sucre, Colombia.
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamame +57 (300) 707 6311
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: ingeneerjef@gmail.com
-                            </li>
+                            <li><span>Teléfono</span><strong>+57 (300) 707 6311</strong></li>
+                            <li><span>Email</span><strong>engineerjef@gmail.com</strong></li>
+                            <li><span>Ubicación</span><strong>Medellín, Colombia</strong></li>
+                            <li><span>Rol</span><span class="tag">Freelance</span></li>
                         </ul>
                     </div>
-                </div-->
+                    <div class="info-card reveal">
+                        <h3><i class="fa-solid fa-lightbulb"></i> Intereses</h3>
+                        <div class="interests">
+                            <span class="interest"><i class="fa-solid fa-microchip"></i> Tech</span>
+                            <span class="interest"><i class="fa-solid fa-wand-magic-sparkles"></i> Innovación</span>
+                            <span class="interest"><i class="fa-solid fa-robot"></i> IA</span>
+                            <span class="interest"><i class="fa-solid fa-chart-pie"></i> Analítica</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://github.com/jeferdev"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/itsjefersson/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/itsjefersson"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://twitter.com/itsjefersson"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Skills</span>
+                <h2>Tecnologías & competencias</h2>
+            </div>
+
+            <div class="featured-skills reveal">
+                <span class="featured-chip"><i class="fa-solid fa-crown"></i> Líder de equipo</span>
+                <span class="featured-chip"><i class="fa-solid fa-robot"></i> Inteligencia artificial</span>
+                <span class="featured-chip"><i class="fa-solid fa-code"></i> Desarrollador de software</span>
+                <span class="featured-chip"><i class="fa-solid fa-chart-line"></i> Analista de datos</span>
+                <span class="featured-chip"><i class="fa-solid fa-puzzle-piece"></i> Resolución de problemas</span>
+                <span class="featured-chip"><i class="fa-solid fa-arrow-trend-up"></i> Mejora continua</span>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skills-col reveal">
+                    <h3><i class="fa-solid fa-code"></i> Desarrollo</h3>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-php"></i> PHP</span><em>99%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="99"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-js"></i> JavaScript</span><em>99%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="99"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-html5"></i> HTML & CSS</span><em>99%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="99"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-vuejs"></i> Vue</span><em>90%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="90"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-laravel"></i> Laravel</span><em>90%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="90"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-wordpress"></i> WordPress</span><em>80%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="80"></span></div></div>
+                </div>
+
+                <div class="skills-col reveal">
+                    <h3><i class="fa-solid fa-chart-line"></i> Datos & IA</h3>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-brands fa-python"></i> Python</span><em>85%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="85"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-database"></i> SQL</span><em>90%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="90"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-brain"></i> Machine Learning</span><em>80%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="80"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-table"></i> Power BI</span><em>85%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="85"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-magnifying-glass-chart"></i> Análisis de datos</span><em>85%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="85"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-robot"></i> Inteligencia Artificial</span><em>80%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="80"></span></div></div>
+                </div>
+
+                <div class="skills-col reveal">
+                    <h3><i class="fa-solid fa-users"></i> Profesionales</h3>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-crown"></i> Liderazgo de equipo</span><em>95%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="95"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-comments"></i> Comunicación</span><em>100%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="100"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-wand-magic-sparkles"></i> Creatividad</span><em>99%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="99"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-bullseye"></i> Dedicación</span><em>95%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="95"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-puzzle-piece"></i> Resolución de problemas</span><em>95%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="95"></span></div></div>
+                    <div class="skill-card"><div class="skill-top"><span><i class="fa-solid fa-arrow-trend-up"></i> Mejora continua</span><em>90%</em></div><div class="skill-bar"><span class="skill-fill" data-progress="90"></span></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM -->
+    <section id="curriculum" class="section curriculum">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Trayectoria</span>
+                <h2>Educación & experiencia</h2>
+            </div>
+
+            <div class="cv-grid">
+                <div class="cv-col reveal">
+                    <h3><i class="fa-solid fa-graduation-cap"></i> Educación</h3>
+                    <div class="cv-item">
+                        <span class="cv-date">En curso</span>
+                        <h4>Especialización en Inteligencia Artificial aplicada a la Analítica de Datos</h4>
+                        <span class="cv-place">Universidad Asturias</span>
+                        <p>Formación de posgrado enfocada en aplicar técnicas de inteligencia artificial al análisis de datos.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">En curso</span>
+                        <h4>Especialización en Estrategias de Inteligencia Artificial</h4>
+                        <span class="cv-place">Instituto Europeo de Posgrado</span>
+                        <p>Estrategias y casos de uso de la inteligencia artificial en entornos empresariales.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2012 — 2018</span>
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="cv-place">Corporación Universitaria del Caribe — CECAR</span>
+                        <p>Formación profesional en ingeniería de sistemas. Desarrollo de un sistema de gestión de información para el consultorio jurídico de CECAR y tesis sobre un sistema geográfico de arquitectura contemporánea en Coveñas.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2019 — 2020</span>
+                        <h4>PHP + MySQL + MVC</h4>
+                        <span class="cv-place">Udemy</span>
+                        <p>Fortalecimiento en PHP y arquitectura MVC. Desarrollo de un sistema de punto de venta con PHP, MySQL y AdminLTE; actualmente migrado a PHP 8.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2010 — 2012</span>
+                        <h4>Técnico en programación de software</h4>
+                        <span class="cv-place">SENA</span>
+                        <p>Primeros pasos en tecnología y programación: ensamble, mantenimiento de equipos y fundamentos de programación.</p>
+                    </div>
+                </div>
+
+                <div class="cv-col reveal">
+                    <h3><i class="fa-solid fa-briefcase"></i> Experiencia</h3>
+                    <div class="cv-item">
+                        <span class="cv-date">2023 — Actualidad</span>
+                        <h4>Fullstack Developer</h4>
+                        <span class="cv-place">Suplos</span>
+                        <p>Desarrollo web con PHP, Laravel, MySQL y Vue.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2019 — 2023</span>
+                        <h4>Desarrollador de Software Freelance</h4>
+                        <span class="cv-place">Independiente</span>
+                        <p>Páginas web y sistemas de información para Fundación Frutos de Corazón, Tienda La Esperanza y Laws Jurídicas y Cobranzas.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2022</span>
+                        <h4>Líder de Innovación</h4>
+                        <span class="cv-place">Hub Innovation Caribe S.A.S.</span>
+                        <p>Creación de prototipos de productos y servicios tecnológicos.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2022 — 2023</span>
+                        <h4>Ingeniero de Sistemas</h4>
+                        <span class="cv-place">Instituto del Riñón de Sucre — IRIS</span>
+                        <p>Soporte TIC, redes, documentación y sistematización de procesos.</p>
+                    </div>
+                    <div class="cv-item">
+                        <span class="cv-date">2021 — 2022</span>
+                        <h4>Webmaster & Desarrollador Web</h4>
+                        <span class="cv-place">Soy tu abogado HOY</span>
+                        <p>Administración de hosting y base de datos, desarrollo web.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section id="portafolio" class="section portfolio">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Portafolio</span>
+                <h2>Proyectos destacados</h2>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project reveal">
+                    <img src="img/proyecto-pos.svg" alt="Sistema de punto de venta">
+                    <div class="project-overlay">
+                        <span class="project-cat">Desarrollo web</span>
+                        <h4>Sistema de Punto de Venta</h4>
+                        <p>PHP · MySQL · AdminLTE</p>
+                    </div>
+                </article>
+                <article class="project reveal">
+                    <img src="img/proyecto-consultorio.svg" alt="Sistema de gestión jurídica">
+                    <div class="project-overlay">
+                        <span class="project-cat">Sistema de información</span>
+                        <h4>Gestión para Consultorio Jurídico</h4>
+                        <p>Ingeniería de software</p>
+                    </div>
+                </article>
+                <article class="project reveal">
+                    <img src="img/proyecto-sig.svg" alt="Sistema geográfico">
+                    <div class="project-overlay">
+                        <span class="project-cat">SIG / Web</span>
+                        <h4>Sistema Geográfico de Arquitectura</h4>
+                        <p>Proyecto de grado</p>
+                    </div>
+                </article>
+                <a class="project reveal" href="https://lawsjuridicasycobranzas.com/" target="_blank" rel="noopener">
+                    <img src="img/proyecto-laws.svg" alt="Laws Jurídicas y Cobranzas">
+                    <div class="project-overlay">
+                        <span class="project-cat">Sitio web</span>
+                        <h4>Laws Jurídicas y Cobranzas</h4>
+                        <p>lawsjuridicasycobranzas.com</p>
+                    </div>
+                </a>
+                <a class="project reveal" href="https://abeia.co/" target="_blank" rel="noopener">
+                    <img src="img/proyecto-abeia.svg" alt="Abeia">
+                    <div class="project-overlay">
+                        <span class="project-cat">Sitio web</span>
+                        <h4>Abeia</h4>
+                        <p>abeia.co</p>
+                    </div>
+                </a>
+                <a class="project reveal" href="https://kamjuridica.com/" target="_blank" rel="noopener">
+                    <img src="img/proyecto-kam.svg" alt="KAM Jurídica">
+                    <div class="project-overlay">
+                        <span class="project-cat">Sitio web</span>
+                        <h4>KAM Jurídica</h4>
+                        <p>kamjuridica.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="eyebrow">Contacto</span>
+                <h2>Hablemos de tu proyecto</h2>
+            </div>
+
+            <div class="contact-cards reveal">
+                <a href="tel:+573007076311" class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Teléfono</span>
+                    <strong>+57 (300) 707 6311</strong>
+                </a>
+                <a href="mailto:engineerjef@gmail.com" class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                    <strong>engineerjef@gmail.com</strong>
+                </a>
+                <a href="https://wa.me/573007076311" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                    <strong>Escríbeme</strong>
+                </a>
+            </div>
+
+            <div class="contact-cta reveal">
+                <p>¿Tienes una idea, un proyecto o una oportunidad? Conversemos.</p>
+                <a href="https://wa.me/573007076311" target="_blank" rel="noopener" class="btn btn-primary">Escríbeme por WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
+                <div class="hero-social">
+                    <a href="https://github.com/itsjefersson/JeferDev" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jeferdev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <a href="#inicio" class="logo">JF<span>.</span></a>
+            <p>© <span id="year"></span> Jefersson · Ingeniero de Sistemas — IA & Analítica de Datos</p>
+            <div class="footer-social">
+                <a href="https://github.com/itsjefersson/JeferDev" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jeferdev/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://wa.me/573007076311" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
         </div>
     </footer>
+
+    <a href="#inicio" class="back-to-top" aria-label="Subir"><i class="fa-solid fa-angles-up"></i></a>
 
     <script src="script.js"></script>
 </body>
